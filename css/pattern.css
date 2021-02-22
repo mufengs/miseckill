@@ -1,0 +1,476 @@
+body {
+  font: 14px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  background-color:#fff;
+  min-width:1226px;
+}
+/*top_nav*/
+.top_nav {
+  background-color:#333;
+  height:40px;
+  z-index:1;
+}
+/*theme content*/
+.container_area {
+  position:relative;
+  width:1226px;
+  margin:0 auto;
+}
+.clearfix::before , .clearfix::after {
+  display:table;
+  content:'';
+  clear:both;
+}
+/*public style*/
+.top_nav a {
+  color:#b0b0b0;
+}
+.top_nav a:hover {
+  color:#fff;
+}
+.top_nav span{
+  color:#424242;
+  margin:0.5em;
+}
+.top_nav a , .top_nav span {
+  font-size:12px;
+  line-height:40px;
+}
+/*left nav*/
+.top_nav .main_left {
+  float:left;
+  font-size:0px;
+}
+/*right*/
+.top_nav .mini_car , .top_nav .title_right {
+  float:right;
+}
+.top_nav .mini_car a {
+  display:block;
+  width:120px;
+  height:40px;
+  background-color:#424242;
+  text-align:center;
+  margin-left:15px;
+}
+.top_nav .mini_car a:hover {
+  background-color:#fff;
+  color:#ff6700;
+}
+.top_nav .mini_car .car_shop {
+  position:relative;
+  top:-4px;
+}
+/*mifast_header*/
+.mifast_header {
+  height:100px;
+}
+.mifast_header a {
+  color:#333;
+}
+/*header_logo*/
+.mifast_header .header_logo , .mifast_header .header_nav {
+  float:left;
+}
+.mifast_header .header_logo {
+  position:relative;
+  width:62px;
+  margin-top:22px;
+}
+.mifast_header  .logo::before {
+  background:url(../images/mi-logo.png) no-repeat 50% 50%;
+  opacity:1;
+}
+.mifast_header .logo::after {
+  background:url(../images/mi-home.png) no-repeat 50% 50%;
+  opacity:0;
+  margin-left:-55px;
+}
+.mifast_header .logo:hover::before {
+  margin-left:55px;
+  opacity:0;
+}
+.mifast_header .logo:hover::after {
+  margin-left:0px;
+  opacity:1;
+}
+.mifast_header .logo {
+  display:block;
+  width:55px;
+  height:55px;
+  background-color:#ff6700;
+}
+.mifast_header  .logo::before ,.mifast_header .logo::after {
+  content:'';
+  width:55px;
+  height:55px;
+  z-index:1;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:all 0.2s;
+}
+/*header_nav*/
+.mifast_header .header_nav {
+  width:820px;
+  padding:38px 0 0 55px;
+}
+.mifast_header .header_nav .mainLists>li {
+  float:left;
+  position:relative;
+}
+.mifast_header .header_nav li a {
+  font-size:16px;
+}
+.mifast_header .header_nav li a:hover {
+  color:#ff6700;
+}
+.mifast_header .header_nav .nav_categories {
+  margin-right:25px;
+}
+.mifast_header .header_nav .item_theme {
+  margin-right:22px
+}
+
+/*header_nav childLists*/
+.mifast_header_childLists .childLists_none {
+  display:none;
+}
+.mifast_header_childLists .childLists {
+  z-index:2;
+  position:absolute;
+  width:100%;
+  height:220px;
+  padding-top:35px;
+  border-top:1px solid #e0e0e0;
+  box-shadow:0 2px 3px #e0e0e0;
+  background-color:#fff;
+}
+.mifast_header_childLists .secondList>li {
+  float:left;
+  padding-right:20px;
+  margin: 0 12px;
+  font-size: 12px;
+}
+.mifast_header_childLists .secondList>.goodItem {
+  border-right:1px solid #e0e0e0;
+}
+.mifast_header_childLists .secondList>li>.goodImg {
+  width:160px;
+  height:110px;
+}
+.mifast_header_childLists .secondList>li>.goodName {
+  margin:22px 0 8px;
+  text-align:center;
+}
+.mifast_header_childLists .secondList>li>.goodPrice {
+  text-align:center;
+  color:#ff6700;
+}
+
+/*header_search*/
+.mifast_header .header_search {
+  float:right;
+  margin-top:25px;
+}
+.mifast_header .header_search  .search {
+  position:absolute;
+  box-sizing:border-box;
+  right:51px;
+  width:243px;
+  height:48px;
+  line-height:48px;
+  padding:0 10px;
+  border:1px solid #e0e0e0;;
+  outline:none;
+}
+.mifast_header .header_search .submit_btn {
+  position:absolute;
+  box-sizing:border-box;
+  right:0;
+  width:52px;
+  height:48px;
+  background-color:#fff;
+  border:1px solid #e0e0e0;
+  outline:none;
+}
+.mifast_header .shutoff {
+  display:none;
+}
+.mifast_header .showhover {
+  border-color:#777777  !important
+}
+.mifast_header .header_search .showfocus {
+  border-color:#ff6700 !important
+}
+.mifast_header .search_slidedown {
+  width:243px;
+  position:absolute;
+  right:51px;
+  margin-top:48px;
+  background-color:#fff;
+  z-index:3;
+}
+.mifast_header .search_slidedown ul {
+  border:1px solid #ff6700;
+  border-top:none;
+}
+.mifast_header .search_slidedown li {
+  width:100%;
+  box-sizing:border-box;
+  padding:8px 0 8px 18px;
+}
+.mifast_header .search_slidedown li a {
+  font-size:12px;
+  color:rgb(0,0,0,0.75)
+}
+.mifast_header .search_slidedown li:hover{
+  background-color:#fafafa;
+}
+.mifast_header .submit_btn:hover {
+  background-color:#ff6700;
+  color:#fff;
+}
+
+/*mifast_main*/
+.mifast_main {
+  background-color:#f5f5f5;
+}
+.mifast_main .main_head {
+  background:#f5f5f5 url(../images/mifast_main/main_head/seckill_head.jpg) no-repeat 50% 0;
+  height:170px;
+}
+.mifast_main .main_head h2 {
+  font-size:2em;
+  margin:15px 0;
+  text-align:center;
+  text-indent:-9999px;
+}
+.mifast_main .main_seckill  {
+  margin-top:-65px;
+}
+.mifast_main .sticky {
+  z-index:99;
+  position:fixed;
+  top:0;
+  left:19px;
+}
+.mifast_main .seckill_tabs li {
+  cursor:pointer;
+  float:left;
+  width:20%;
+  height:68px;
+  line-height:68px;
+  background-color:#414141;
+}
+.mifast_main .seckill_tabs .showred_item {
+  background-color:#f1393a;
+}
+.mifast_main .seckill_tabs .clock ,.mifast_main .seckill_tabs .stay {
+  display:inline-block;
+  color:#fff;
+}
+.mifast_main .seckill_tabs .clock {
+  font-size:1.25em;
+  margin-left:50px;
+  vertical-align:middle;
+}
+.mifast_main .seckill_tabs .stay {
+  margin-left:15px;
+  text-align:left;
+  line-height:1.5;
+  vertical-align:middle;
+}
+.mifast_main .seckill {
+  margin-top:25px;
+}
+.mifast_main .seckill ul {
+  margin-left:-13px;
+  display:none;
+}
+.mifast_main .seckill .seckill_active {
+  display:block;
+}
+.mifast_main .seckill li {
+  cursor:pointer;
+  width:400px;
+  height:190px;
+  float:left;
+  background-color:#fff;
+  margin-left:13px;
+  margin-bottom:13px;
+  transition:all 0.3s linear;
+}
+.mifast_main .seckill li:hover {
+  box-shadow:3px 3px 10px rgb(180, 180, 180);
+  transform:translateY(-2px)
+}
+.mifast_main .seckill .thingImg {
+  width:190px;
+  height:190px;
+  float:left;
+  margin-right:15px;
+}
+.mifast_main .seckill .thingImg img{
+  height:100%
+}
+.mifast_main .seckill .thingTit {
+  padding-top:25px;
+  font-size:16px;
+  color:#333;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.mifast_main .seckill .thingIntro {
+  height:45px;
+  color:rgb(0,0,0,0.54);
+  margin-top:6px;
+  font-size:12px
+}
+.mifast_main .seckill .thingPri {
+  width:auto;
+  height:40px;
+}
+.mifast_main .seckill .thingPri .new {
+  font-size:16px;
+  color:#f1393a;
+}
+.mifast_main .seckill .thingPri .old {
+  font-size:12px;
+  margin-left:12px;
+  color:#b0b0b0;
+  text-decoration:line-through;
+}
+.mifast_main .seckill .thingBtn button {
+  width:120px;
+  height:30px;
+  color:#fff;
+  background-color:#f1393a;
+  line-height:30px;
+  text-align:center;
+  border:none;
+  outline:none;
+}
+.mifast_main .seckill_noticed {
+  font-size:12px;
+  margin-top:100px;
+  padding-bottom:35px;
+  color:rgb(0,0,0,0.27)
+}
+
+/*mifast_footer*/
+.mifast_footer .footer_title {
+  height:50px;
+  background-color:#fff;
+  padding-top:22px;
+  border-bottom:1px solid #e0e0e0;
+}
+.mifast_footer li {
+  float:left;
+  width:19.8%;
+  height:25px;
+  font-size:16px;
+  text-align:center;
+  vertical-align:middle;
+}
+.mifast_footer li:not(:last-child){
+  border-right:1px solid #e0e0e0;
+}
+.mifast_footer li a {
+  color:#616161
+}
+
+.mifast_footer .footer_options {
+  padding-top:20px;
+  margin-bottom:40px;
+}
+.mifast_footer .option_modules {
+  width:79.3%;
+  float:left;
+  
+}
+.mifast_footer .footer_options tr a {
+  color:#616161;
+}
+.mifast_footer .footer_options table {
+  width:100%
+}
+.mifast_footer li a:hover,.mifast_footer td a:hover {
+  color:#ff6700;
+}
+.mifast_footer .footer_options td,th {
+  width:13.16%;
+  height:30px;
+  font-size:12px;
+}
+.mifast_footer .footer_options th{
+  height:50px;
+  font-size:14px;
+  font-style: normal;
+  font-weight: normal;
+  text-align:left;
+}
+.mifast_footer .option_contact {
+  width:20%;
+  float:left;
+  margin-top:13px;
+  text-align:center;
+  border-left:1px solid #e0e0e0;
+}
+.mifast_footer .option_contact .tele {
+  font-size:22px;
+  color:#ff6700;
+}
+.mifast_footer .option_contact .time {
+  font-size:12px;
+  color:#616161;
+  margin-top:3px;
+}
+.mifast_footer .option_contact button {
+  cursor:pointer;
+  width:120px;
+  height:30px;
+  background-color:#fff;
+  color:#ff6700;
+  border:1px solid #ff6700;
+  margin:16px 0 9px;
+  transition:all 0.4s ease;
+  outline:none;
+}
+.mifast_footer .option_contact button:hover {
+  background-color:#ff6700;
+  border:none;
+  color:#fff;
+}
+.mifast_footer .option_contact .new_media {
+  font-size:12px;
+}
+.mifast_footer .option_contact .new_media span {
+  position:relative;
+  top:-6px;
+}
+.mifast_footer .option_contact .new_media a {
+  display:inline-block;
+  margin-left:6px;
+  width:24px;
+  height:24px;
+}
+.mifast_footer .option_contact .wb {
+  background:url(../images/mifast_footer/wb.png) no-repeat 50% 0;
+  background-size:cover;
+}
+.mifast_footer .option_contact .wx {
+  background:url(../images/mifast_footer/wx.png) no-repeat 50% 0;
+  background-size:cover;
+}
+.mifast_footer .bottom_infor {
+  height:40px;
+  line-height:40px;
+  background-color:#f7f6f6;
+  color:#818181;
+  text-align:center;
+}
+.mifast_footer .bottom_infor a {
+  color:#818181;
+}
